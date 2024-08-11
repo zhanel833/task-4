@@ -9,6 +9,11 @@ public class KoscheiTheDeathless {
 
     private Ocean1 ocean;
 
+    @Autowired
+    public KoscheiTheDeathless(Ocean1 ocean) {
+        this.ocean = ocean;
+    }
+
     public String getRulesByDeth() {
         return "На свете есть океан , " + ocean.toString();
     }
